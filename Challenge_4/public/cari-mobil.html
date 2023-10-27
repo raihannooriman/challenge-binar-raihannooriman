@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head><!--metadata-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Binar Rental Car</title>
+        <link href="source/Logobinar.png" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap-5.3.1-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-5.3.1-dist/style.css"> 
+    </head>
+    <body>
+        <header><!--navbar-->
+            <nav id="navbar" class="navbar navbar-expand-lg py-3 bg-gray">
+                <div class="container">
+                    <a class="navbar-brand ms=0"href="#main"><!--logo-->
+                        <img width="110" height="34" top="25" left="136" src="source/binar.svg" alt="Binar Rental Car">
+                    </a>
+                    <button
+                        class="navbar-toggler border-0 shadow-none"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse offcanvas w-50 offcanvas-end py-2"
+                        data-bs-scroll="true"
+                        id="offcanvasWithBothOptions"
+                        tabindex="-1"
+                        id="navbar-menu"><!--Tombol Navbar-->
+                        <div class="offcanvas-header w-100">
+                            <h2 class="mb-0 fw-bold">BCR</h2>
+                            <!-- Close Button -->
+                            <button
+                                type="button"
+                                class="btn-close text-reset shadow-none"
+                                data-bs-dismiss="offcanvas">
+                            </button>
+                            <!-- End Close Button -->
+                        </div>
+                        <!-- Navbar Menu Item -->
+                        <ul class="navbar-nav px-3 ms-lg-auto me-auto me-lg-0">
+                            <li class="nav-item px-1">
+                                <a class="nav-link text-black"href="#Service">Our Service</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link text-black"href="#why-us">Why us</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link text-black"href="#testimonial">Testimonial</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link text-black"href="#faq">FAQ</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <button class="btn btn-lgreen-400 text-white fw-bold"
+                                    type="submit"
+                                    id="register">Register</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--Main Section-->
+        <section id="main" class="bg-gray">
+            <div class="container">
+                <div class="row row-cols-md-2">
+                    <div class="align-self-center px-md-2 p-4">
+                        <h1 class="fs-1 fw-bold">
+                            Sewa & Rental Mobil Terbaik di kawasan Banjarmasin
+                        </h1>
+                        <p class="w-75 py-2">
+                            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
+                        </p>
+                    </div>
+                    <div class="align-self-center">
+                        <img src="source/img_car.png" class="w-100" alt="Car">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="backdrop" class="backdrop"></div>
+            <div id="finder" class="container">
+                <div class="card border border-white shadow w-100 p-2">
+                    <div class="card-body">
+                        <form id="search">
+                        <div class="row row-cols-md-5 row-cols-1 g-3">
+                            <div>
+                                <label for="driver-type" class="from-label">Tipe Driver</label>
+                                <select id="driver-type" class="form-select trigger" required>
+                                    <option hidden="" disabled selected>Pilih Tipe Driver</option>
+                                    <option value="true">Dengan Supir</option>
+                                    <option value="false">Tanpa Supir(Lepas Kunci)</option>
+                                </select>  
+                            </div>
+                            <div>
+                                <label for="date" class="from-label">Tanggal</label>
+                                <input 
+                                    id="date"
+                                    type="text"
+                                    class="form-control trigger"
+                                    placeholder="Pilih Tanggal"
+                                    onfocus="(this.type='date')"
+                                    required >
+                            </div>
+                            <div>
+                                <label for="time" class="from-label">Waktu Jemput/Ambil</label>
+                                <select id="time" class="form-select trigger" required>
+                                    <option hidden>Pilih Waktu</option>
+                                    <option value="08:00:00">08.00 WIB</option>
+                                    <option value="09:00:00">09.00 WIB</option>
+                                    <option value="10:00:00">10.00 WIB</option>
+                                    <option value="11:00:00">11.00 WIB</option>
+                                    <option value="12:00:00">12.00 WIB</option>
+                                </select>  
+                            </div>
+                            <div>
+                                <label for="passenger" class="from-label">Penumpang</label>
+                                <input
+                                    id="passenger"
+                                    type="number"
+                                    class="form-control trigger"
+                                    placeholder="Jumlah Penumpang" />
+                            </div>
+                            <div class="d-flex align-items-end justify-content-around">
+                                <button 
+                                    type="submit"
+                                    class="btn btn-lgreen-400 fw-bold py-2 px-3 text-white">
+                                    Cari Mobil
+                                </button>
+                                <button 
+                                    type="clear"
+                                    class="btn btn-danger fw-bold py-2 px-3 text-white">
+                                    Reset
+                                </button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="container">
+                    <div
+                    id="cars-container"
+                    class="row row-cols-md-3 row-cols-1 g-3"></div>
+                </div>
+            </div>
+        </section>
+        <section id="footer" class="pt-5 mt-5">
+            <div class="container px-4">
+                <div class="row row-cols-lg-4">
+                    <div class="flex-column">
+                        <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+                        <p><a href = "mailto: binarcarrental@gmail.com" class="text-decoration-none text-black fw-normal mb-3">binarcarrental@gmail.com</a></p>
+                        <p>081-233-334-808</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <ul class="list-group list-group-flush gap-2">
+                            <li class="d-inline-flex">
+                                <p><a href="#Service" class="text-decoration-none text-black fw-bold mb-3">Our services</a></p>
+                            </li>
+                            <li class="d-inline-flex">
+                                <p><a href="#why-us" class="text-decoration-none text-black fw-bold mb-3">Why Us</a></p>
+                            </li>
+                            <li class="d-inline-flex">
+                                <p><a href="#testimonial" class="text-decoration-none text-black fw-bold mb-3">Testimonial</a></p>
+                            </li>
+                            <li class="d-inline-flex">
+                                <p><a href="#faq" class="text-decoration-none text-black fw-bold mb-3">FAQ</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-column">
+                        <p>Connect with us</p>
+                        <div class="d-flex flex-row">
+                            <div class="d-flex flex-row">
+                                <div class="rounded-circle bg-dblue-400 p-1 me-1">
+                                    <a class="text-white" href="#"><i data-feather="facebook"></i></a>
+                                </div>
+                                <div class="rounded-circle bg-dblue-400 p-1 mx-1">
+                                    <a class="text-white" href="#"><i data-feather="instagram"></i></a>
+                                </div>
+                                <div class="rounded-circle bg-dblue-400 p-1 mx-1">
+                                    <a class="text-white" href="#"><i data-feather="twitter"></i></a>
+                                </div>
+                                <div class="rounded-circle bg-dblue-400 p-1 mx-1">
+                                    <a class="text-white" href="mailto: binarcarrental@gmail.com"><i data-feather="mail"></i></a>
+                                </div>
+                                <div class="rounded-circle bg-dblue-400 p-1 ms-1">
+                                    <a class="text-white" href="#"><i data-feather="twitch"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column">
+                        <p>Copyright Binar 2023</p>
+                        <img width="100" height="34" src="source/binar.svg" alt="Binar Rental Car">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <script>
+            feather.replace();
+        </script>
+        <script type="text/javascript" src="./scripts/binar.js"></script>
+        <script type="text/javascript" src="./scripts/app.example.js"></script>
+        <script type="text/javascript" src="./scripts/car.example.js"></script>
+        <script type="text/javascript" src="./scripts/main.example.js"></script>
+    </body>
+</html>
