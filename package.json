@@ -4,7 +4,14 @@
   "description": "Binar Rental Car",
   "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist/ && ttsc",
+    "start": "node dist/server",
+    "dev": "ts-node src/server",
+    "lint:fix": "eslint src --fix && yarn format",
+    "lint:strict": "eslint --max-warnings=0 src",
+    "typecheck": "tsc --noEmit --incremental false",
+    "format": "prettier -w .",
+    "format:check": "prettier -c ."
   },
   "keywords": [],
   "author": "Raihan Nooriman",
