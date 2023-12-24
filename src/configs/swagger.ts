@@ -9,7 +9,6 @@ const definition = {
   },
   servers: [
     {
-      url: "https://binarc6.zekhoi.dev",
       description: "Production server",
     },
     {
