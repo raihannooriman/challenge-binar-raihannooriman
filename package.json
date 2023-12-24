@@ -1,8 +1,8 @@
 {
   "name": "challenge-binar",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Binar Rental Car",
+  "main": "dist/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
