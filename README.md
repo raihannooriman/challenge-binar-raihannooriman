@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -28,3 +29,16 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+=======
+Kumpulan challenge raihannooriman dari SYNRGY Binar 2023
+
+[Challenge 2](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Challenge_2)
+
+[Challenge 3](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Challenge_3)
+
+[Challenge 4](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Challenge_4)
+
+[Challenge 5](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Challenge_5)
+
+[Challenge 6](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Car-Management-Dashboard)
+>>>>>>> f1f677788a5e490d72b53744249de585a853eb28
