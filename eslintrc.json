@@ -1,0 +1,51 @@
+{
+  "root": true,
+  "overrides": [],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["simple-import-sort", "unused-imports", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "unused-imports/no-unused-imports": "warn",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "simple-import-sort/exports": "warn",
+    "simple-import-sort/imports": [
+      "warn",
+      {
+        "groups": [
+          // other that didnt fit in
+          ["^"],
+          // relative paths up until 3 level
+          [
+            "^\\./?$",
+            "^\\.(?!/?$)",
+            "^\\.\\./?$",
+            "^\\.\\.(?!/?$)",
+            "^\\.\\./\\.\\./?$",
+            "^\\.\\./\\.\\.(?!/?$)",
+            "^\\.\\./\\.\\./\\.\\./?$",
+            "^\\.\\./\\.\\./\\.\\.(?!/?$)"
+          ]
+        ]
+      }
+    ]
+  },
+  "ignorePatterns": ["node_modules/", "dist/", "build/", "tests"]
+}
