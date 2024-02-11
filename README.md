@@ -12,4 +12,4 @@ Kumpulan challenge raihannooriman dari SYNRGY Binar 2023
 
 [Challenge 7](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Challenge_7)
 
-[Challenge 8](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Challenge_5)
+[Challenge 8](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Challenge_8)
