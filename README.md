@@ -1,11 +1,4 @@
-Kumpulan challenge raihannooriman dari SYNRGY Binar 2023
-
-[Challenge 2](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Challenge_2)
-
-[Challenge 3](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Challenge_3)
-
-[Challenge 4](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Challenge_4)
-
-[Challenge 5](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Challenge_5)
-
-[Challenge 6](https://github.com/raihannooriman/challenge-binar-raihannooriman/tree/Car-Management-Dashboard)
+1. Setup database `.env` file
+2. Run `npm install` for install dependencies
+3. Run `npm run db:create`, `npm run db:migrate`, `npm run db:seed`
+4. Run `npm run test` for run test
